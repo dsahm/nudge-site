@@ -16,7 +16,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="muted">nudge for iPhone and iPad · Effective 19 September 2026</p>
+<p class="muted">nudge for iPhone and iPad · Effective 21 September 2026</p>
 
 <p>nudge is designed so that your data stays yours. The app has no accounts of its own, no analytics, no advertising and no third-party tracking.</p>
 
@@ -24,7 +24,10 @@
 <p>Your tasks, notes, tags, reminders and attachments are stored on your device. If iCloud sync is enabled in the app's settings, they are also stored in the private database of your iCloud account through Apple's CloudKit service, so that your own devices can share them. The developer has no access to this data.</p>
 
 <h2>Email import</h2>
-<p>If you connect a mailbox, nudge reads your inbox over an encrypted IMAP connection directly from your device to your email provider. Only emails sent from your own address to your own address are turned into tasks. nudge never marks, moves, deletes or sends emails. Your email address, server details and password are stored in the iOS keychain on your device and, when iCloud Keychain is enabled in iOS, synchronised by Apple between your devices. They are never sent anywhere else.</p>
+<p>If you connect a mailbox, nudge reads your inbox directly from your device. Only emails sent from your own address to your own address are turned into tasks: the subject becomes the title and the text becomes notes. nudge never marks, moves, deletes or sends emails, and no email content, address or credential is ever sent to the developer or to any server operated by the developer.</p>
+<p><strong>Gmail and Outlook.</strong> These mailboxes are connected by signing in with your Google or Microsoft account in a browser window. nudge only asks for read access (Google: <code>gmail.readonly</code>; Microsoft: <code>Mail.Read</code> and <code>User.Read</code>) and receives an access token, never your password. The token is stored in the iOS keychain on your device and, when iCloud Keychain is enabled in iOS, synchronised by Apple between your devices. Disconnecting the mailbox in nudge deletes the token; you can also revoke nudge's access at any time in your Google or Microsoft account settings.</p>
+<p><strong>iCloud Mail and other IMAP servers.</strong> These are read over an encrypted IMAP connection with your email address, server details and an app-specific password or password, stored in the iOS keychain in the same way.</p>
+<p><strong>Google API Services User Data Policy.</strong> nudge's use of information received from Gmail APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is used only to show you the emails you sent to yourself as tasks inside nudge. It is not used for advertising, is never sold, is never transferred to humans or to other parties, and is never used to train models. Gmail data stays on your device and, if iCloud sync is enabled, in the private database of your iCloud account.</p>
 
 <h2>Reminders</h2>
 <p>Reminders are scheduled as local notifications on your device. No notification content leaves the device.</p>
