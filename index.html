@@ -1,33 +1,211 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>nudge – Support</title>
-<style>
-  :root { color-scheme: light dark; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; max-width: 640px; margin: 0 auto; padding: 48px 20px; line-height: 1.55; color: #1c1c1e; background: #f6f5f8; }
-  @media (prefers-color-scheme: dark) { body { color: #ececf1; background: #141418; } a { color: #b9b3ff; } }
-  h1 { font-size: 2rem; margin-bottom: .25rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .muted { opacity: .7; }
-  a { color: #5b4bd6; }
-</style>
-</head>
-<body>
-<h1>nudge</h1>
-<p class="muted">A calm, tactile to-do app for iPhone and iPad.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>nudge - a to-do list that clicks</title>
+    <meta name="description" content="A to-do app for iPhone and iPad. Tasks are glass keys: press one and it clicks, finish it and it settles. The notes you email yourself become tasks, and the ones you keep resending get nudged." />
+    <link rel="canonical" href="https://smart-nudges.net/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="nudge - a to-do list that clicks" />
+    <meta property="og:description" content="Tasks are glass keys: press one and it clicks, finish it and it settles. The notes you email yourself become tasks." />
+    <meta property="og:image" content="https://smart-nudges.net/assets/img/tour.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="nudge - a to-do list that clicks" />
+    <meta name="twitter:description" content="Tasks are glass keys: press one and it clicks, finish it and it settles. The notes you email yourself become tasks." />
+    <meta name="twitter:image" content="https://smart-nudges.net/assets/img/tour.jpg" />
+    <link rel="apple-touch-icon" href="assets/img/icon-180.png" />
+    <link rel="icon" href="assets/img/icon-180.png" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <header class="site-head">
+      <a class="brand" href="./"><img src="assets/img/icon-180.png" alt="" />nudge</a>
+      <nav class="site-nav">
+        <a class="sm-hide" href="#email">Email import</a>
+        <a class="sm-hide" href="#pricing">Pricing</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
 
-<h2>Support</h2>
-<p>Questions, ideas or something not working? Open an issue on GitHub and it will be looked at promptly:</p>
-<p><a href="https://github.com/dsahm/nudge-site/issues">github.com/dsahm/nudge-site/issues</a></p>
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-fade"></div>
+      <div class="wrap hero-inner">
+        <h1>A to-do list that clicks.</h1>
+        <p class="lede">
+          Tasks are full-width glass keys. Press one and it clicks, finish it and it settles below the line.
+          And the notes you email yourself become tasks, without lifting a finger.
+        </p>
+        <div class="cta-row">
+          <!-- TODO: replace with the App Store link, and Apple's official badge artwork if you prefer it -->
+          <a class="btn" href="APP_STORE_LINK">Download on the App Store</a>
+          <a class="btn secondary" href="#tour">Watch the tour</a>
+        </div>
+        <p class="note">iPhone and iPad &middot; iOS 26 &middot; No account, no tracking</p>
+      </div>
+    </div>
 
-<h2>Frequently asked</h2>
-<p><strong>Do I have to subscribe?</strong> No. The first seven days are free. Afterwards, nudge pro is needed only to add new tasks. Everything you already have stays fully editable.</p>
-<p><strong>Where are my tasks stored?</strong> On your device and, if iCloud sync is on, in your private iCloud database. Nobody else can see them.</p>
-<p><strong>What does the email import do?</strong> Connect your Gmail, Outlook, iCloud Mail or any IMAP mailbox in Settings, then send yourself an email whenever something comes to mind. nudge turns emails you send to yourself into tasks: the subject becomes the title, the text becomes notes. When the same note arrives again, it joins the task you already have and moves it to the top of the board. nudge only reads your inbox; your mailbox is never changed. Gmail and Outlook are connected by signing in with Google or Microsoft with read-only access.</p>
+    <section id="tour">
+      <div class="wrap">
+        <figure>
+          <video controls playsinline preload="none" poster="assets/img/tour.jpg">
+            <source src="assets/video/tour.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Twenty-three seconds, sound on.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-<h2>Privacy</h2>
-<p>Read the <a href="privacy.html">privacy policy</a>.</p>
-</body>
+    <section id="feel">
+      <div class="wrap split narrow-media">
+        <div>
+          <h2>Finishing should feel like something.</h2>
+          <p class="sub">
+            Every interaction in nudge has a sound and a haptic of its own, generated rather than sampled,
+            and each can be switched off on its own.
+          </p>
+          <ul class="points">
+            <li>Tasks are full-width glass keys. The completion latch clicks, the key seats, the title strikes through.</li>
+            <li>Reminders are set on two dials: the left one picks the day, the right one the time, one detent at a time.</li>
+            <li>Finished work settles below a dashed line instead of vanishing, and is cleared on your schedule, from never to thirty days.</li>
+            <li>A new task lands on the board with a small bump. A swipe deletes, with detents on the way.</li>
+          </ul>
+        </div>
+        <figure>
+          <video class="portrait" controls playsinline preload="none" poster="assets/img/feel.jpg">
+            <source src="assets/video/feel.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Sound on for this one.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="email">
+      <div class="wrap">
+        <h2>Your inbox is already your to-do list.</h2>
+        <p class="sub">
+          You already email yourself. nudge connects one mailbox, read-only, and turns the notes you send
+          yourself into tasks.
+        </p>
+        <div class="split">
+          <figure>
+            <video controls playsinline preload="none" poster="assets/img/email.jpg">
+              <source src="assets/video/email.mp4" type="video/mp4" />
+            </video>
+          </figure>
+          <ul class="points">
+            <li>Connect Gmail or Outlook by signing in with Google or Microsoft, iCloud Mail with an app-specific password, or any other IMAP server.</li>
+            <li>Read-only access. Nothing in your mailbox is ever marked, moved, changed or sent.</li>
+            <li>Only mail you sent to your own address counts. The subject becomes the title, the text becomes the notes, attached files come across as task files, and the task carries an Email tag.</li>
+            <li>A subject like &ldquo;Idea: plan the autumn weekend&rdquo; also tags the task Idea and keeps the rest as the title.</li>
+            <li>Send the same note again and it does not pile up. nudge counts the repeat, adds only what the task does not already have, moves it to the top and nudges you about it, inside the quiet hours you choose.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="shots">
+      <div class="wrap">
+        <div class="shots">
+          <img src="assets/img/01-board.png" alt="The nudge board with open and completed tasks" />
+          <img src="assets/img/04-reminder.png" alt="The two-dial reminder tray" />
+          <img src="assets/img/11-board-with-email-tasks.png" alt="Imported emails on the board with an Email tag" />
+          <img src="assets/img/12-nudge-card.png" alt="The glowing card for a note that arrived again" />
+        </div>
+      </div>
+    </section>
+
+    <section id="private">
+      <div class="wrap">
+        <h2>What nudge does not do.</h2>
+        <p class="sub">The short list is the point.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>No account</h3>
+            <p>There is nothing to sign up for. Tasks live on your device and, if you turn it on, in your own private iCloud database.</p>
+          </div>
+          <div class="card">
+            <h3>No backend</h3>
+            <p>No server of ours ever sees your tasks, your notes or your mail. There is no server of ours in the path at all.</p>
+          </div>
+          <div class="card">
+            <h3>No tracking</h3>
+            <p>No analytics, no advertising, no third-party SDKs watching you work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap">
+        <h2>Pricing</h2>
+        <p class="sub">
+          The first seven days are free. After that, nudge pro is needed only to add new tasks: everything you
+          already have stays fully editable, and every other part of the app keeps working.
+        </p>
+        <div class="cta-row" style="justify-content: flex-start">
+          <a class="btn" href="APP_STORE_LINK">Download on the App Store</a>
+        </div>
+        <p class="note">English, German, Spanish and French. iPhone and iPad, iOS 26 or later.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <h2>Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Do I have to subscribe?</summary>
+            <p>No. The first seven days are free. Afterwards, nudge pro is needed only to add new tasks. Everything you already have stays fully editable.</p>
+          </details>
+          <details>
+            <summary>Where are my tasks stored?</summary>
+            <p>On your device and, if iCloud sync is on, in the private database of your own iCloud account. The developer has no access to it.</p>
+          </details>
+          <details>
+            <summary>What exactly does the email import read?</summary>
+            <p>Only messages in your inbox whose sender and recipient are your own address, or one of the extra sender addresses you list. It reads the subject, the text and any attached files to create the task, and nothing else. It never marks, moves, deletes or sends mail.</p>
+          </details>
+          <details>
+            <summary>How does it know a note is a repeat?</summary>
+            <p>Arriving subjects are compared with your open tasks by word overlap, ignoring reply markers and punctuation. A close match joins the task it repeats and raises its count instead of creating a second one.</p>
+          </details>
+          <details>
+            <summary>Will it flood me with notifications?</summary>
+            <p>No. Repeated tasks are offered at most the number of times a day you choose, never inside your quiet hours, and a task you keep putting off stops being offered.</p>
+          </details>
+          <details>
+            <summary>Does it work without the email part?</summary>
+            <p>Yes. Email import is optional and off until you connect a mailbox in Settings.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="wrap">
+        <h2>Support</h2>
+        <p class="sub">
+          Something not working, or an idea for it? Open an issue and it will be looked at promptly.
+        </p>
+        <div class="cta-row" style="justify-content: flex-start">
+          <a class="btn secondary" href="https://github.com/dsahm/nudge-site/issues">Open an issue on GitHub</a>
+          <a class="btn secondary" href="support.html">Support page</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-foot">
+      <div class="wrap">
+        <span>nudge for iPhone and iPad</span>
+        <span>
+          <a href="support.html">Support</a> &middot;
+          <a href="privacy.html">Privacy</a> &middot;
+          <a href="https://github.com/dsahm/nudge-site/issues">Contact</a>
+        </span>
+      </div>
+    </footer>
+  </body>
 </html>
