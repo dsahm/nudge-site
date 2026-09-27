@@ -426,3 +426,68 @@ figcaption {
     justify-content: center;
   }
 }
+
+/* contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 8px;
+}
+
+.contact-form label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+  font: inherit;
+  font-size: 17px;
+  color: var(--ink);
+  background: var(--card-solid);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  width: 100%;
+}
+
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--cta);
+  outline-offset: 1px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form input[name="_gotcha"] {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  margin-top: 16px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 999px;
+  background: var(--cta);
+  color: var(--cta-ink);
+  font: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-note {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}
